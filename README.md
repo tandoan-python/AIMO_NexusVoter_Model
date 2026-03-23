@@ -41,9 +41,24 @@ To run this notebook successfully on the Kaggle platform without Internet access
 
 3. Offline Libraries (vllm):
 
-You must install vllm via an offline dataset containing the .whl files since internet is disabled during the final scoring run.
+- The internet is disabled during the final scoring run, so you must install vllm using an offline dataset.
 
-Example: `!pip install --no-index --find-links=/kaggle/input/vllm-wheels vllm`
+- How to add it:
+
+   1. Click + Add Input in the Kaggle right sidebar.
+
+   2. Search for a vllm wheels dataset (e.g., search "vllm wheels" and select a dataset like Making wheels of necessary packages for VLLM, or upload your own).
+
+   3. Click the + icon to attach it to your notebook.
+
+   4. Hover over the newly added dataset in the Input list, click the three dots (...), and select Copy file path.
+
+- Installation Command: Replace `YOUR_COPIED_PATH` with the path you just copied in the command below:
+
+```
+!pip install --no-index --find-links=YOUR_COPIED_PATH vllm
+
+```
 
 4. Execution:
 
