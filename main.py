@@ -3,26 +3,50 @@
   {
    "cell_type": "code",
    "execution_count": 1,
-   "id": "4a4253c4",
+   "id": "cfed8c39",
    "metadata": {
     "_cell_guid": "b1076dfc-b9ad-4769-8c92-a6c4dae69d19",
     "_uuid": "8f2839f25d086af736a60e9eeb907d3b93b6e0e5",
     "execution": {
-     "iopub.execute_input": "2026-03-23T04:32:03.528376Z",
-     "iopub.status.busy": "2026-03-23T04:32:03.528150Z",
-     "iopub.status.idle": "2026-03-23T04:36:23.245846Z",
-     "shell.execute_reply": "2026-03-23T04:36:23.245343Z"
+     "iopub.execute_input": "2026-03-23T06:06:00.210463Z",
+     "iopub.status.busy": "2026-03-23T06:06:00.210160Z",
+     "iopub.status.idle": "2026-03-23T06:08:36.217657Z",
+     "shell.execute_reply": "2026-03-23T06:08:36.216754Z"
     },
     "papermill": {
-     "duration": 259.721997,
-     "end_time": "2026-03-23T04:36:23.247227+00:00",
+     "duration": 156.012496,
+     "end_time": "2026-03-23T06:08:36.219181+00:00",
      "exception": false,
-     "start_time": "2026-03-23T04:32:03.525230+00:00",
+     "start_time": "2026-03-23T06:06:00.206685+00:00",
      "status": "completed"
     },
     "tags": []
    },
    "outputs": [
+    {
+     "name": "stderr",
+     "output_type": "stream",
+     "text": [
+      "/usr/local/lib/python3.12/dist-packages/torch/cuda/__init__.py:435: UserWarning: \n",
+      "    Found GPU0 Tesla P100-PCIE-16GB which is of cuda capability 6.0.\n",
+      "    Minimum and Maximum cuda capability supported by this version of PyTorch is\n",
+      "    (7.0) - (12.0)\n",
+      "    \n",
+      "  queued_call()\n",
+      "/usr/local/lib/python3.12/dist-packages/torch/cuda/__init__.py:435: UserWarning: \n",
+      "    Please install PyTorch with a following CUDA\n",
+      "    configurations:  12.6 following instructions at\n",
+      "    https://pytorch.org/get-started/locally/\n",
+      "    \n",
+      "  queued_call()\n",
+      "/usr/local/lib/python3.12/dist-packages/torch/cuda/__init__.py:435: UserWarning: \n",
+      "Tesla P100-PCIE-16GB with CUDA capability sm_60 is not compatible with the current PyTorch installation.\n",
+      "The current PyTorch install supports CUDA capabilities sm_70 sm_75 sm_80 sm_86 sm_90 sm_100 sm_120.\n",
+      "If you want to use the Tesla P100-PCIE-16GB GPU with PyTorch, please check the instructions at https://pytorch.org/get-started/locally/\n",
+      "\n",
+      "  queued_call()\n"
+     ]
+    },
     {
      "name": "stdout",
      "output_type": "stream",
@@ -34,7 +58,7 @@
      "name": "stderr",
      "output_type": "stream",
      "text": [
-      "/tmp/ipykernel_44/233474946.py:45: DeprecationWarning: Python 3.14 will, by default, filter extracted tar archives and reject files or modify their metadata. Use the filter argument to control this behavior.\n",
+      "/tmp/ipykernel_24/233474946.py:45: DeprecationWarning: Python 3.14 will, by default, filter extracted tar archives and reject files or modify their metadata. Use the filter argument to control this behavior.\n",
       "  tar.extractall(path=EXTRACT_DIR)\n"
      ]
     },
@@ -303,14 +327,14 @@
      "name": "stderr",
      "output_type": "stream",
      "text": [
-      "2026-03-23 04:34:26.972942: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:467] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered\n",
+      "2026-03-23 06:07:48.861628: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:467] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered\n",
       "WARNING: All log messages before absl::InitializeLog() is called are written to STDERR\n",
-      "E0000 00:00:1774240467.376534      44 cuda_dnn.cc:8579] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered\n",
-      "E0000 00:00:1774240467.471804      44 cuda_blas.cc:1407] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered\n",
-      "W0000 00:00:1774240468.282149      44 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.\n",
-      "W0000 00:00:1774240468.282181      44 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.\n",
-      "W0000 00:00:1774240468.282183      44 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.\n",
-      "W0000 00:00:1774240468.282184      44 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.\n"
+      "E0000 00:00:1774246069.059735      24 cuda_dnn.cc:8579] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered\n",
+      "E0000 00:00:1774246069.114037      24 cuda_blas.cc:1407] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered\n",
+      "W0000 00:00:1774246069.577594      24 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.\n",
+      "W0000 00:00:1774246069.577641      24 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.\n",
+      "W0000 00:00:1774246069.577644      24 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.\n",
+      "W0000 00:00:1774246069.577646      24 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.\n"
      ]
     },
     {
@@ -318,104 +342,13 @@
      "output_type": "stream",
      "text": [
       "Initializing LLM Engine...\n",
-      "INFO 03-23 04:34:48 [utils.py:233] non-default args: {'max_model_len': 4096, 'gpu_memory_utilization': 0.8, 'disable_log_stats': True, 'quantization': 'AWQ', 'enforce_eager': True, 'model': '/kaggle/input/models/adriansaezmartinez/qwen2.5-math-7b-instruct-awq/transformers/default/1'}\n",
-      "INFO 03-23 04:35:06 [model.py:533] Resolved architecture: Qwen2ForCausalLM\n",
-      "INFO 03-23 04:35:06 [model.py:1582] Using max model len 4096\n",
-      "INFO 03-23 04:35:06 [awq_marlin.py:166] Detected that the model can run with awq_marlin, however you specified quantization=awq explicitly, so forcing awq. Use quantization=awq_marlin for faster inference\n",
-      "INFO 03-23 04:35:07 [scheduler.py:231] Chunked prefill is enabled with max_num_batched_tokens=16384.\n",
-      "INFO 03-23 04:35:07 [vllm.py:754] Asynchronous scheduling is enabled.\n",
-      "WARNING 03-23 04:35:07 [vllm.py:788] Enforce eager set, disabling torch.compile and CUDAGraphs. This is equivalent to setting -cc.mode=none -cc.cudagraph_mode=none\n",
-      "WARNING 03-23 04:35:07 [vllm.py:799] Inductor compilation was disabled by user settings, optimizations settings that are only active during inductor compilation will be ignored.\n",
-      "INFO 03-23 04:35:07 [vllm.py:964] Cudagraph is disabled under eager mode\n",
-      "INFO 03-23 04:35:07 [compilation.py:289] Enabled custom fusions: norm_quant, act_quant\n",
-      "WARNING 03-23 04:35:08 [system_utils.py:152] We must use the `spawn` multiprocessing start method. Overriding VLLM_WORKER_MULTIPROC_METHOD to 'spawn'. See https://docs.vllm.ai/en/latest/usage/troubleshooting.html#python-multiprocessing for more information. Reasons: CUDA is initialized\n"
-     ]
-    },
-    {
-     "name": "stderr",
-     "output_type": "stream",
-     "text": [
-      "2026-03-23 04:35:14.671667: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:467] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered\n",
-      "WARNING: All log messages before absl::InitializeLog() is called are written to STDERR\n",
-      "E0000 00:00:1774240514.688987     259 cuda_dnn.cc:8579] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered\n",
-      "E0000 00:00:1774240514.694141     259 cuda_blas.cc:1407] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered\n",
-      "W0000 00:00:1774240514.706624     259 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.\n",
-      "W0000 00:00:1774240514.706647     259 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.\n",
-      "W0000 00:00:1774240514.706651     259 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.\n",
-      "W0000 00:00:1774240514.706653     259 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.\n",
-      "AttributeError: 'MessageFactory' object has no attribute 'GetPrototype'\n",
-      "AttributeError: 'MessageFactory' object has no attribute 'GetPrototype'\n",
-      "AttributeError: 'MessageFactory' object has no attribute 'GetPrototype'\n",
-      "AttributeError: 'MessageFactory' object has no attribute 'GetPrototype'\n",
-      "AttributeError: 'MessageFactory' object has no attribute 'GetPrototype'\n"
-     ]
-    },
-    {
-     "name": "stdout",
-     "output_type": "stream",
-     "text": [
-      "(EngineCore pid=259) INFO 03-23 04:35:20 [core.py:103] Initializing a V1 LLM engine (v0.18.0) with config: model='/kaggle/input/models/adriansaezmartinez/qwen2.5-math-7b-instruct-awq/transformers/default/1', speculative_config=None, tokenizer='/kaggle/input/models/adriansaezmartinez/qwen2.5-math-7b-instruct-awq/transformers/default/1', skip_tokenizer_init=False, tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.float16, max_seq_len=4096, download_dir=None, load_format=auto, tensor_parallel_size=1, pipeline_parallel_size=1, data_parallel_size=1, decode_context_parallel_size=1, dcp_comm_backend=ag_rs, disable_custom_all_reduce=False, quantization=awq, enforce_eager=True, enable_return_routed_experts=False, kv_cache_dtype=auto, device_config=cuda, structured_outputs_config=StructuredOutputsConfig(backend='auto', disable_any_whitespace=False, disable_additional_properties=False, reasoning_parser='', reasoning_parser_plugin='', enable_in_reasoning=False), observability_config=ObservabilityConfig(show_hidden_metrics_for_version=None, otlp_traces_endpoint=None, collect_detailed_traces=None, kv_cache_metrics=False, kv_cache_metrics_sample=0.01, cudagraph_metrics=False, enable_layerwise_nvtx_tracing=False, enable_mfu_metrics=False, enable_mm_processor_stats=False, enable_logging_iteration_details=False), seed=0, served_model_name=/kaggle/input/models/adriansaezmartinez/qwen2.5-math-7b-instruct-awq/transformers/default/1, enable_prefix_caching=True, enable_chunked_prefill=True, pooler_config=None, compilation_config={'mode': <CompilationMode.NONE: 0>, 'debug_dump_path': None, 'cache_dir': '', 'compile_cache_save_format': 'binary', 'backend': 'inductor', 'custom_ops': ['all'], 'splitting_ops': [], 'compile_mm_encoder': False, 'compile_sizes': [], 'compile_ranges_endpoints': [16384], 'inductor_compile_config': {'enable_auto_functionalized_v2': False, 'combo_kernels': True, 'benchmark_combo_kernel': True}, 'inductor_passes': {}, 'cudagraph_mode': <CUDAGraphMode.NONE: 0>, 'cudagraph_num_of_warmups': 0, 'cudagraph_capture_sizes': [], 'cudagraph_copy_inputs': False, 'cudagraph_specialize_lora': True, 'use_inductor_graph_partition': False, 'pass_config': {'fuse_norm_quant': True, 'fuse_act_quant': True, 'fuse_attn_quant': False, 'enable_sp': False, 'fuse_gemm_comms': False, 'fuse_allreduce_rms': False}, 'max_cudagraph_capture_size': 0, 'dynamic_shapes_config': {'type': <DynamicShapesType.BACKED: 'backed'>, 'evaluate_guards': False, 'assume_32_bit_indexing': False}, 'local_cache_dir': None, 'fast_moe_cold_start': True, 'static_all_moe_layers': []}\n",
-      "(EngineCore pid=259) INFO 03-23 04:35:20 [parallel_state.py:1395] world_size=1 rank=0 local_rank=0 distributed_init_method=tcp://172.19.2.2:45637 backend=nccl\n"
-     ]
-    },
-    {
-     "name": "stderr",
-     "output_type": "stream",
-     "text": [
-      "[W323 04:35:20.180842324 socket.cpp:207] [c10d] The hostname of the client socket cannot be retrieved. err=-3\n"
-     ]
-    },
-    {
-     "name": "stdout",
-     "output_type": "stream",
-     "text": [
-      "(EngineCore pid=259) INFO 03-23 04:35:20 [parallel_state.py:1717] rank 0 in world size 1 is assigned as DP rank 0, PP rank 0, PCP rank 0, TP rank 0, EP rank N/A, EPLB rank N/A\n",
-      "(EngineCore pid=259) INFO 03-23 04:35:21 [gpu_model_runner.py:4481] Starting to load model /kaggle/input/models/adriansaezmartinez/qwen2.5-math-7b-instruct-awq/transformers/default/1...\n",
-      "(EngineCore pid=259) INFO 03-23 04:35:22 [cuda.py:317] Using FLASH_ATTN attention backend out of potential backends: ['FLASH_ATTN', 'FLASHINFER', 'TRITON_ATTN', 'FLEX_ATTENTION'].\n",
-      "(EngineCore pid=259) INFO 03-23 04:35:22 [flash_attn.py:598] Using FlashAttention version 3\n"
-     ]
-    },
-    {
-     "name": "stderr",
-     "output_type": "stream",
-     "text": [
-      "Loading safetensors checkpoint shards:   0% Completed | 0/2 [00:00<?, ?it/s]\n",
-      "Loading safetensors checkpoint shards:  50% Completed | 1/2 [00:37<00:37, 37.73s/it]\n",
-      "Loading safetensors checkpoint shards: 100% Completed | 2/2 [00:46<00:00, 20.96s/it]\n",
-      "Loading safetensors checkpoint shards: 100% Completed | 2/2 [00:46<00:00, 23.47s/it]\n",
-      "(EngineCore pid=259) \n"
-     ]
-    },
-    {
-     "name": "stdout",
-     "output_type": "stream",
-     "text": [
-      "(EngineCore pid=259) INFO 03-23 04:36:09 [default_loader.py:384] Loading weights took 46.96 seconds\n",
-      "(EngineCore pid=259) INFO 03-23 04:36:10 [gpu_model_runner.py:4566] Model loading took 5.2 GiB memory and 47.499272 seconds\n",
-      "(EngineCore pid=259) INFO 03-23 04:36:21 [gpu_worker.py:456] Available KV cache memory: 55.59 GiB\n",
-      "(EngineCore pid=259) INFO 03-23 04:36:21 [kv_cache_utils.py:1316] GPU KV cache size: 1,040,928 tokens\n",
-      "(EngineCore pid=259) INFO 03-23 04:36:21 [kv_cache_utils.py:1321] Maximum concurrency for 4,096 tokens per request: 254.13x\n"
-     ]
-    },
-    {
-     "name": "stderr",
-     "output_type": "stream",
-     "text": [
-      "(EngineCore pid=259) 2026-03-23 04:36:22,006 - INFO - autotuner.py:262 - flashinfer.jit: [Autotuner]: Autotuning process starts ...\n",
-      "(EngineCore pid=259) 2026-03-23 04:36:22,020 - INFO - autotuner.py:268 - flashinfer.jit: [Autotuner]: Autotuning process ends\n"
-     ]
-    },
-    {
-     "name": "stdout",
-     "output_type": "stream",
-     "text": [
-      "(EngineCore pid=259) INFO 03-23 04:36:22 [core.py:281] init engine (profile, create kv cache, warmup model) took 12.05 seconds\n",
-      "(EngineCore pid=259) INFO 03-23 04:36:23 [vllm.py:754] Asynchronous scheduling is enabled.\n",
-      "(EngineCore pid=259) WARNING 03-23 04:36:23 [vllm.py:788] Enforce eager set, disabling torch.compile and CUDAGraphs. This is equivalent to setting -cc.mode=none -cc.cudagraph_mode=none\n",
-      "(EngineCore pid=259) WARNING 03-23 04:36:23 [vllm.py:799] Inductor compilation was disabled by user settings, optimizations settings that are only active during inductor compilation will be ignored.\n",
-      "(EngineCore pid=259) INFO 03-23 04:36:23 [vllm.py:964] Cudagraph is disabled under eager mode\n",
-      "(EngineCore pid=259) INFO 03-23 04:36:23 [compilation.py:289] Enabled custom fusions: norm_quant, act_quant\n",
-      "INFO 03-23 04:36:23 [llm.py:391] Supported tasks: ['generate']\n"
+      "INFO 03-23 06:08:12 [utils.py:233] non-default args: {'max_model_len': 4096, 'gpu_memory_utilization': 0.8, 'disable_log_stats': True, 'quantization': 'AWQ', 'enforce_eager': True, 'model': '/kaggle/input/models/adriansaezmartinez/qwen2.5-math-7b-instruct-awq/transformers/default/1'}\n",
+      "INFO 03-23 06:08:34 [model.py:533] Resolved architecture: Qwen2ForCausalLM\n",
+      "INFO 03-23 06:08:34 [model.py:1582] Using max model len 4096\n",
+      "INFO 03-23 06:08:36 [scheduler.py:231] Chunked prefill is enabled with max_num_batched_tokens=8192.\n",
+      "Failed to load model: 1 validation error for VllmConfig\n",
+      "  Value error, The quantization method awq is not supported for the current GPU. Minimum capability: 75. Current capability: 60. [type=value_error, input_value=ArgsKwargs((), {'model_co... 'shutdown_timeout': 0}), input_type=ArgsKwargs]\n",
+      "    For further information visit https://errors.pydantic.dev/2.12/v/value_error\n"
      ]
     }
    ],
@@ -670,29 +603,26 @@
  ],
  "metadata": {
   "kaggle": {
-   "accelerator": "nvidiaH100",
+   "accelerator": "none",
    "dataSources": [
     {
      "databundleVersionId": 14559231,
-     "isSourceIdPinned": false,
      "sourceId": 118448,
      "sourceType": "competition"
     },
     {
      "databundleVersionId": 9997483,
-     "isSourceIdPinned": false,
      "modelId": 150852,
      "modelInstanceId": 127932,
      "sourceId": 150653,
      "sourceType": "modelInstanceVersion"
     },
     {
-     "isSourceIdPinned": false,
      "sourceId": 305327396,
      "sourceType": "kernelVersion"
     }
    ],
-   "isGpuEnabled": true,
+   "isGpuEnabled": false,
    "isInternetEnabled": false,
    "language": "python",
    "sourceType": "notebook"
@@ -716,14 +646,14 @@
   },
   "papermill": {
    "default_parameters": {},
-   "duration": 265.034328,
-   "end_time": "2026-03-23T04:36:25.866620+00:00",
+   "duration": 161.986354,
+   "end_time": "2026-03-23T06:08:39.842517+00:00",
    "environment_variables": {},
    "exception": null,
    "input_path": "__notebook__.ipynb",
    "output_path": "__notebook__.ipynb",
    "parameters": {},
-   "start_time": "2026-03-23T04:32:00.832292+00:00",
+   "start_time": "2026-03-23T06:05:57.856163+00:00",
    "version": "2.7.0"
   }
  },
